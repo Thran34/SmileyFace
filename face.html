@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Red Circle with Cartoon Eyes and Smile</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="200" height="200"></canvas>
+    <script src="app.js"></script>
+  </body>
+</html>
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+// Draw a red circle
+ctx.beginPath();
+ctx.arc(100, 100, 45, 0, 2 * Math.PI);
+ctx.fillStyle = 'red';
+ctx.fill();
+
+
+ctx.beginPath();
+ctx.arc(85, 80, 10, 0, 2 * Math.PI);
+ctx.arc(120, 80, 10, 0, 2 * Math.PI);
+ctx.fillStyle = 'white';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(85, 80, 5, 0, 2 * Math.PI);
+ctx.arc(120, 80, 5, 0, 2 * Math.PI);
+ctx.fillStyle = 'black';
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(83, 78, 1.5, 0, 2 * Math.PI);
+ctx.arc(118, 78, 1.5, 0, 2 * Math.PI);
+ctx.fillStyle = 'white';
+ctx.fill();
+
+ctx.beginPath();
+ctx.moveTo(70, 120);
+ctx.quadraticCurveTo(120, 130, 100, 120);
+ctx.moveTo(40, 20);
+ctx.strokeStyle = 'black';
+ctx.lineWidth = 5;
+ctx.stroke();
+
+
+</script>
